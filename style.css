@@ -285,7 +285,7 @@ img {
 }
 
 .lang-item:hover {
-  /* color: #5340d8; */
+  color: #5340d8;
 }
 
 /* HERO SECTION */
@@ -663,8 +663,6 @@ img {
 
 /* STACKING CARDS SECTION */
 
-/* every card is sticky at top 0, so the next card slides over it when scrolling.
-   the later cards have a higher z-index (below) so they cover the earlier ones */
 .slide {
   position: sticky;
   top: 0;
@@ -818,8 +816,7 @@ img {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* the radio buttons are hidden. When one is :checked, the ~ selects its sibling that comes after it,
-   so the label of the chosen tab turns black */
+
 #who1:checked ~ .everyone-header label[for="who1"],
 #who2:checked ~ .everyone-header label[for="who2"],
 #who3:checked ~ .everyone-header label[for="who3"],
@@ -841,7 +838,7 @@ img {
   margin: 0 auto;
 }
 
-/* all the cards sit in one row, and the row is moved left to show a different card */
+
 .who-track {
   position: relative;
   display: flex;
@@ -851,8 +848,6 @@ img {
   transition: left 0.6s ease;
 }
 
-/* each click moves the row left by one card + one gap (75% + 1.3% = 76.3%).
-   the last card is different because it lines up with the right edge */
 #who1:checked ~ .who-viewport .who-track { left: 0%; }
 #who2:checked ~ .who-viewport .who-track { left: -76.3%; }
 #who3:checked ~ .who-viewport .who-track { left: -152.6%; }
@@ -878,7 +873,7 @@ img {
   object-fit: cover;
 }
 
-/* dark layer on top of the photo so the white text can be read */
+
 .who-card::after {
   content: "";
   position: absolute;
@@ -1141,14 +1136,14 @@ img {
   transform: translate(-50%, -50%) translate(calc(var(--u) * 11.6), calc(var(--u) * 1.2)) rotate(7deg);
 }
 
-/* ROLLING WORDS SECTION */
+
 .rolling {
   background-color: rgb(247, 247, 255);
   padding: 8vw 0 9vw;
   text-align: center;
 }
 
-/* only one line tall with overflow hidden, so only one word can be seen at a time */
+
 .word-window {
   height: 1.2em;
   overflow: hidden;
